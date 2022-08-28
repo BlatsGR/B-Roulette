@@ -34,7 +34,7 @@
             this.lblThemeSwitch = new MaterialSkin.Controls.MaterialLabel();
             this.themeSwitcher = new MaterialSkin.Controls.MaterialSwitch();
             this.lblNumbers = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblSessionNumber = new MaterialSkin.Controls.MaterialLabel();
             this.txtResult = new MaterialSkin.Controls.MaterialTextBox();
             this.lblResult = new MaterialSkin.Controls.MaterialLabel();
             this.btn0 = new MaterialSkin.Controls.MaterialButton();
@@ -75,10 +75,61 @@
             this.btn35 = new MaterialSkin.Controls.MaterialButton();
             this.btn36 = new MaterialSkin.Controls.MaterialButton();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblSessionResults = new System.Windows.Forms.Label();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
+            this.lblLastResults = new MaterialSkin.Controls.MaterialLabel();
+            this.lblResultDefault = new MaterialSkin.Controls.MaterialLabel();
+            this.lblLowNumbers = new MaterialSkin.Controls.MaterialLabel();
+            this.lblOdd = new MaterialSkin.Controls.MaterialLabel();
+            this.lvlEven = new MaterialSkin.Controls.MaterialLabel();
+            this.lblEven2 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblOdd2 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblHighNumbers = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed2 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed3 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed4 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed5 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed6 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed7 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed8 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed9 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed10 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed11 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed12 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed13 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed14 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed15 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed16 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed17 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRed18 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack2 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack3 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack4 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack5 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack6 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack7 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack8 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack9 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack10 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack11 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack12 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack13 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack14 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack15 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack16 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack17 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblBlack18 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnClear = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
+            this.lblCounterInfo = new MaterialSkin.Controls.MaterialLabel();
+            this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
+            this.lblInfo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.materialCard1.SuspendLayout();
+            this.materialCard2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -99,7 +150,7 @@
             this.lblDevelop.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblDevelop.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             this.lblDevelop.HighEmphasis = true;
-            this.lblDevelop.Location = new System.Drawing.Point(831, 663);
+            this.lblDevelop.Location = new System.Drawing.Point(831, 643);
             this.lblDevelop.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblDevelop.Name = "lblDevelop";
             this.lblDevelop.Size = new System.Drawing.Size(198, 24);
@@ -141,25 +192,25 @@
             this.lblNumbers.Depth = 0;
             this.lblNumbers.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblNumbers.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.lblNumbers.Location = new System.Drawing.Point(372, 229);
+            this.lblNumbers.Location = new System.Drawing.Point(4, 68);
             this.lblNumbers.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblNumbers.Name = "lblNumbers";
             this.lblNumbers.Size = new System.Drawing.Size(237, 24);
             this.lblNumbers.TabIndex = 4;
             this.lblNumbers.Text = "Choose a roulette number:";
             // 
-            // materialLabel1
+            // lblSessionNumber
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel1.Location = new System.Drawing.Point(331, 335);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(329, 24);
-            this.materialLabel1.TabIndex = 5;
-            this.materialLabel1.Text = "Write the number of the last session:";
+            this.lblSessionNumber.AutoSize = true;
+            this.lblSessionNumber.Depth = 0;
+            this.lblSessionNumber.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblSessionNumber.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.lblSessionNumber.Location = new System.Drawing.Point(332, 261);
+            this.lblSessionNumber.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblSessionNumber.Name = "lblSessionNumber";
+            this.lblSessionNumber.Size = new System.Drawing.Size(329, 24);
+            this.lblSessionNumber.TabIndex = 5;
+            this.lblSessionNumber.Text = "Write the number of the last session:";
             // 
             // txtResult
             // 
@@ -169,7 +220,7 @@
             this.txtResult.Depth = 0;
             this.txtResult.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtResult.LeadingIcon = null;
-            this.txtResult.Location = new System.Drawing.Point(361, 362);
+            this.txtResult.Location = new System.Drawing.Point(362, 288);
             this.txtResult.MaxLength = 50;
             this.txtResult.MouseState = MaterialSkin.MouseState.OUT;
             this.txtResult.Multiline = false;
@@ -187,12 +238,12 @@
             this.lblResult.Depth = 0;
             this.lblResult.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblResult.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.lblResult.Location = new System.Drawing.Point(331, 456);
+            this.lblResult.Location = new System.Drawing.Point(412, 412);
             this.lblResult.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(74, 29);
+            this.lblResult.Size = new System.Drawing.Size(1, 0);
             this.lblResult.TabIndex = 7;
-            this.lblResult.Text = "Result:";
+            this.lblResult.TextChanged += new System.EventHandler(this.lblResult_TextChanged);
             // 
             // btn0
             // 
@@ -204,12 +255,12 @@
             this.btn0.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn0.HighEmphasis = true;
             this.btn0.Icon = null;
-            this.btn0.Location = new System.Drawing.Point(5, 259);
+            this.btn0.Location = new System.Drawing.Point(95, 118);
             this.btn0.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn0.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn0.Name = "btn0";
             this.btn0.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn0.Size = new System.Drawing.Size(35, 62);
+            this.btn0.Size = new System.Drawing.Size(30, 25);
             this.btn0.TabIndex = 8;
             this.btn0.Text = "0";
             this.btn0.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -221,22 +272,24 @@
             // 
             this.btn1.AutoSize = false;
             this.btn1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn1.BackColor = System.Drawing.Color.Gray;
             this.btn1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btn1.Depth = 0;
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn1.HighEmphasis = true;
             this.btn1.Icon = null;
-            this.btn1.Location = new System.Drawing.Point(46, 259);
+            this.btn1.Location = new System.Drawing.Point(51, 144);
             this.btn1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn1.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn1.Name = "btn1";
             this.btn1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn1.Size = new System.Drawing.Size(35, 30);
+            this.btn1.Size = new System.Drawing.Size(30, 25);
             this.btn1.TabIndex = 9;
             this.btn1.Text = "1";
             this.btn1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn1.UseAccentColor = false;
-            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
@@ -248,12 +301,12 @@
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.HighEmphasis = true;
             this.btn2.Icon = null;
-            this.btn2.Location = new System.Drawing.Point(89, 259);
+            this.btn2.Location = new System.Drawing.Point(137, 144);
             this.btn2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn2.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn2.Name = "btn2";
             this.btn2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn2.Size = new System.Drawing.Size(35, 30);
+            this.btn2.Size = new System.Drawing.Size(30, 25);
             this.btn2.TabIndex = 10;
             this.btn2.Text = "2";
             this.btn2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -270,12 +323,12 @@
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.HighEmphasis = true;
             this.btn3.Icon = null;
-            this.btn3.Location = new System.Drawing.Point(132, 259);
+            this.btn3.Location = new System.Drawing.Point(51, 170);
             this.btn3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn3.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn3.Name = "btn3";
             this.btn3.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn3.Size = new System.Drawing.Size(35, 30);
+            this.btn3.Size = new System.Drawing.Size(30, 25);
             this.btn3.TabIndex = 11;
             this.btn3.Text = "3";
             this.btn3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -292,12 +345,12 @@
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.HighEmphasis = true;
             this.btn4.Icon = null;
-            this.btn4.Location = new System.Drawing.Point(175, 259);
+            this.btn4.Location = new System.Drawing.Point(137, 170);
             this.btn4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn4.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn4.Name = "btn4";
             this.btn4.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn4.Size = new System.Drawing.Size(35, 30);
+            this.btn4.Size = new System.Drawing.Size(30, 25);
             this.btn4.TabIndex = 12;
             this.btn4.Text = "4";
             this.btn4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -314,12 +367,12 @@
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.HighEmphasis = true;
             this.btn5.Icon = null;
-            this.btn5.Location = new System.Drawing.Point(218, 259);
+            this.btn5.Location = new System.Drawing.Point(51, 196);
             this.btn5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn5.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn5.Name = "btn5";
             this.btn5.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn5.Size = new System.Drawing.Size(35, 30);
+            this.btn5.Size = new System.Drawing.Size(30, 25);
             this.btn5.TabIndex = 13;
             this.btn5.Text = "5";
             this.btn5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -336,12 +389,12 @@
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.HighEmphasis = true;
             this.btn6.Icon = null;
-            this.btn6.Location = new System.Drawing.Point(261, 259);
+            this.btn6.Location = new System.Drawing.Point(137, 196);
             this.btn6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn6.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn6.Name = "btn6";
             this.btn6.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn6.Size = new System.Drawing.Size(35, 30);
+            this.btn6.Size = new System.Drawing.Size(30, 25);
             this.btn6.TabIndex = 14;
             this.btn6.Text = "6";
             this.btn6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -358,12 +411,12 @@
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.HighEmphasis = true;
             this.btn7.Icon = null;
-            this.btn7.Location = new System.Drawing.Point(304, 259);
+            this.btn7.Location = new System.Drawing.Point(51, 222);
             this.btn7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn7.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn7.Name = "btn7";
             this.btn7.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn7.Size = new System.Drawing.Size(35, 30);
+            this.btn7.Size = new System.Drawing.Size(30, 25);
             this.btn7.TabIndex = 15;
             this.btn7.Text = "7";
             this.btn7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -380,12 +433,12 @@
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.HighEmphasis = true;
             this.btn8.Icon = null;
-            this.btn8.Location = new System.Drawing.Point(347, 259);
+            this.btn8.Location = new System.Drawing.Point(137, 222);
             this.btn8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn8.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn8.Name = "btn8";
             this.btn8.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn8.Size = new System.Drawing.Size(35, 30);
+            this.btn8.Size = new System.Drawing.Size(30, 25);
             this.btn8.TabIndex = 16;
             this.btn8.Text = "8";
             this.btn8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -402,12 +455,12 @@
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.HighEmphasis = true;
             this.btn9.Icon = null;
-            this.btn9.Location = new System.Drawing.Point(390, 259);
+            this.btn9.Location = new System.Drawing.Point(51, 248);
             this.btn9.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn9.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn9.Name = "btn9";
             this.btn9.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn9.Size = new System.Drawing.Size(35, 30);
+            this.btn9.Size = new System.Drawing.Size(30, 25);
             this.btn9.TabIndex = 17;
             this.btn9.Text = "9";
             this.btn9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -424,12 +477,12 @@
             this.btn10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn10.HighEmphasis = true;
             this.btn10.Icon = null;
-            this.btn10.Location = new System.Drawing.Point(433, 259);
+            this.btn10.Location = new System.Drawing.Point(137, 248);
             this.btn10.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn10.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn10.Name = "btn10";
             this.btn10.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn10.Size = new System.Drawing.Size(35, 30);
+            this.btn10.Size = new System.Drawing.Size(30, 25);
             this.btn10.TabIndex = 18;
             this.btn10.Text = "10";
             this.btn10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -446,12 +499,12 @@
             this.btn11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn11.HighEmphasis = true;
             this.btn11.Icon = null;
-            this.btn11.Location = new System.Drawing.Point(476, 259);
+            this.btn11.Location = new System.Drawing.Point(51, 274);
             this.btn11.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn11.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn11.Name = "btn11";
             this.btn11.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn11.Size = new System.Drawing.Size(35, 30);
+            this.btn11.Size = new System.Drawing.Size(30, 25);
             this.btn11.TabIndex = 19;
             this.btn11.Text = "11";
             this.btn11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -468,12 +521,12 @@
             this.btn12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn12.HighEmphasis = true;
             this.btn12.Icon = null;
-            this.btn12.Location = new System.Drawing.Point(519, 259);
+            this.btn12.Location = new System.Drawing.Point(137, 274);
             this.btn12.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn12.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn12.Name = "btn12";
             this.btn12.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn12.Size = new System.Drawing.Size(35, 30);
+            this.btn12.Size = new System.Drawing.Size(30, 25);
             this.btn12.TabIndex = 20;
             this.btn12.Text = "12";
             this.btn12.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -490,12 +543,12 @@
             this.btn13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn13.HighEmphasis = true;
             this.btn13.Icon = null;
-            this.btn13.Location = new System.Drawing.Point(562, 259);
+            this.btn13.Location = new System.Drawing.Point(51, 300);
             this.btn13.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn13.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn13.Name = "btn13";
             this.btn13.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn13.Size = new System.Drawing.Size(35, 30);
+            this.btn13.Size = new System.Drawing.Size(30, 25);
             this.btn13.TabIndex = 21;
             this.btn13.Text = "13";
             this.btn13.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -512,12 +565,12 @@
             this.btn14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn14.HighEmphasis = true;
             this.btn14.Icon = null;
-            this.btn14.Location = new System.Drawing.Point(605, 259);
+            this.btn14.Location = new System.Drawing.Point(137, 300);
             this.btn14.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn14.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn14.Name = "btn14";
             this.btn14.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn14.Size = new System.Drawing.Size(35, 30);
+            this.btn14.Size = new System.Drawing.Size(30, 25);
             this.btn14.TabIndex = 22;
             this.btn14.Text = "14";
             this.btn14.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -534,12 +587,12 @@
             this.btn15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn15.HighEmphasis = true;
             this.btn15.Icon = null;
-            this.btn15.Location = new System.Drawing.Point(648, 259);
+            this.btn15.Location = new System.Drawing.Point(51, 326);
             this.btn15.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn15.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn15.Name = "btn15";
             this.btn15.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn15.Size = new System.Drawing.Size(35, 30);
+            this.btn15.Size = new System.Drawing.Size(30, 25);
             this.btn15.TabIndex = 23;
             this.btn15.Text = "15";
             this.btn15.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -556,12 +609,12 @@
             this.btn16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn16.HighEmphasis = true;
             this.btn16.Icon = null;
-            this.btn16.Location = new System.Drawing.Point(691, 259);
+            this.btn16.Location = new System.Drawing.Point(137, 326);
             this.btn16.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn16.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn16.Name = "btn16";
             this.btn16.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn16.Size = new System.Drawing.Size(35, 30);
+            this.btn16.Size = new System.Drawing.Size(30, 25);
             this.btn16.TabIndex = 24;
             this.btn16.Text = "16";
             this.btn16.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -578,12 +631,12 @@
             this.btn17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn17.HighEmphasis = true;
             this.btn17.Icon = null;
-            this.btn17.Location = new System.Drawing.Point(734, 259);
+            this.btn17.Location = new System.Drawing.Point(51, 352);
             this.btn17.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn17.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn17.Name = "btn17";
             this.btn17.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn17.Size = new System.Drawing.Size(35, 30);
+            this.btn17.Size = new System.Drawing.Size(30, 25);
             this.btn17.TabIndex = 25;
             this.btn17.Text = "17";
             this.btn17.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -600,12 +653,12 @@
             this.btn18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn18.HighEmphasis = true;
             this.btn18.Icon = null;
-            this.btn18.Location = new System.Drawing.Point(777, 259);
+            this.btn18.Location = new System.Drawing.Point(137, 352);
             this.btn18.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn18.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn18.Name = "btn18";
             this.btn18.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn18.Size = new System.Drawing.Size(35, 30);
+            this.btn18.Size = new System.Drawing.Size(30, 25);
             this.btn18.TabIndex = 26;
             this.btn18.Text = "18";
             this.btn18.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -622,12 +675,12 @@
             this.btn19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn19.HighEmphasis = true;
             this.btn19.Icon = null;
-            this.btn19.Location = new System.Drawing.Point(46, 291);
+            this.btn19.Location = new System.Drawing.Point(50, 433);
             this.btn19.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn19.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn19.Name = "btn19";
             this.btn19.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn19.Size = new System.Drawing.Size(35, 30);
+            this.btn19.Size = new System.Drawing.Size(30, 25);
             this.btn19.TabIndex = 27;
             this.btn19.Text = "19";
             this.btn19.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -644,12 +697,12 @@
             this.btn20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn20.HighEmphasis = true;
             this.btn20.Icon = null;
-            this.btn20.Location = new System.Drawing.Point(89, 291);
+            this.btn20.Location = new System.Drawing.Point(137, 433);
             this.btn20.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn20.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn20.Name = "btn20";
             this.btn20.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn20.Size = new System.Drawing.Size(35, 30);
+            this.btn20.Size = new System.Drawing.Size(30, 25);
             this.btn20.TabIndex = 28;
             this.btn20.Text = "20";
             this.btn20.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -666,12 +719,12 @@
             this.btn21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn21.HighEmphasis = true;
             this.btn21.Icon = null;
-            this.btn21.Location = new System.Drawing.Point(132, 291);
+            this.btn21.Location = new System.Drawing.Point(50, 460);
             this.btn21.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn21.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn21.Name = "btn21";
             this.btn21.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn21.Size = new System.Drawing.Size(35, 30);
+            this.btn21.Size = new System.Drawing.Size(30, 25);
             this.btn21.TabIndex = 29;
             this.btn21.Text = "21";
             this.btn21.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -688,12 +741,12 @@
             this.btn22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn22.HighEmphasis = true;
             this.btn22.Icon = null;
-            this.btn22.Location = new System.Drawing.Point(175, 291);
+            this.btn22.Location = new System.Drawing.Point(137, 460);
             this.btn22.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn22.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn22.Name = "btn22";
             this.btn22.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn22.Size = new System.Drawing.Size(35, 30);
+            this.btn22.Size = new System.Drawing.Size(30, 25);
             this.btn22.TabIndex = 30;
             this.btn22.Text = "22";
             this.btn22.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -710,12 +763,12 @@
             this.btn23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn23.HighEmphasis = true;
             this.btn23.Icon = null;
-            this.btn23.Location = new System.Drawing.Point(218, 291);
+            this.btn23.Location = new System.Drawing.Point(50, 487);
             this.btn23.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn23.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn23.Name = "btn23";
             this.btn23.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn23.Size = new System.Drawing.Size(35, 30);
+            this.btn23.Size = new System.Drawing.Size(30, 25);
             this.btn23.TabIndex = 31;
             this.btn23.Text = "23";
             this.btn23.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -732,12 +785,12 @@
             this.btn24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn24.HighEmphasis = true;
             this.btn24.Icon = null;
-            this.btn24.Location = new System.Drawing.Point(261, 291);
+            this.btn24.Location = new System.Drawing.Point(137, 487);
             this.btn24.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn24.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn24.Name = "btn24";
             this.btn24.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn24.Size = new System.Drawing.Size(35, 30);
+            this.btn24.Size = new System.Drawing.Size(30, 25);
             this.btn24.TabIndex = 32;
             this.btn24.Text = "24";
             this.btn24.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -754,12 +807,12 @@
             this.btn25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn25.HighEmphasis = true;
             this.btn25.Icon = null;
-            this.btn25.Location = new System.Drawing.Point(304, 291);
+            this.btn25.Location = new System.Drawing.Point(50, 514);
             this.btn25.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn25.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn25.Name = "btn25";
             this.btn25.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn25.Size = new System.Drawing.Size(35, 30);
+            this.btn25.Size = new System.Drawing.Size(30, 25);
             this.btn25.TabIndex = 33;
             this.btn25.Text = "25";
             this.btn25.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -776,12 +829,12 @@
             this.btn26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn26.HighEmphasis = true;
             this.btn26.Icon = null;
-            this.btn26.Location = new System.Drawing.Point(347, 291);
+            this.btn26.Location = new System.Drawing.Point(137, 514);
             this.btn26.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn26.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn26.Name = "btn26";
             this.btn26.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn26.Size = new System.Drawing.Size(35, 30);
+            this.btn26.Size = new System.Drawing.Size(30, 25);
             this.btn26.TabIndex = 34;
             this.btn26.Text = "26";
             this.btn26.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -798,12 +851,12 @@
             this.btn27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn27.HighEmphasis = true;
             this.btn27.Icon = null;
-            this.btn27.Location = new System.Drawing.Point(390, 291);
+            this.btn27.Location = new System.Drawing.Point(50, 540);
             this.btn27.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn27.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn27.Name = "btn27";
             this.btn27.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn27.Size = new System.Drawing.Size(35, 30);
+            this.btn27.Size = new System.Drawing.Size(30, 25);
             this.btn27.TabIndex = 35;
             this.btn27.Text = "27";
             this.btn27.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -820,12 +873,12 @@
             this.btn28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn28.HighEmphasis = true;
             this.btn28.Icon = null;
-            this.btn28.Location = new System.Drawing.Point(433, 291);
+            this.btn28.Location = new System.Drawing.Point(137, 540);
             this.btn28.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn28.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn28.Name = "btn28";
             this.btn28.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn28.Size = new System.Drawing.Size(35, 30);
+            this.btn28.Size = new System.Drawing.Size(30, 25);
             this.btn28.TabIndex = 36;
             this.btn28.Text = "28";
             this.btn28.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -842,12 +895,12 @@
             this.btn29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn29.HighEmphasis = true;
             this.btn29.Icon = null;
-            this.btn29.Location = new System.Drawing.Point(476, 291);
+            this.btn29.Location = new System.Drawing.Point(50, 566);
             this.btn29.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn29.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn29.Name = "btn29";
             this.btn29.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn29.Size = new System.Drawing.Size(35, 30);
+            this.btn29.Size = new System.Drawing.Size(30, 25);
             this.btn29.TabIndex = 37;
             this.btn29.Text = "29";
             this.btn29.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -864,12 +917,12 @@
             this.btn30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn30.HighEmphasis = true;
             this.btn30.Icon = null;
-            this.btn30.Location = new System.Drawing.Point(519, 291);
+            this.btn30.Location = new System.Drawing.Point(137, 566);
             this.btn30.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn30.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn30.Name = "btn30";
             this.btn30.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn30.Size = new System.Drawing.Size(35, 30);
+            this.btn30.Size = new System.Drawing.Size(30, 25);
             this.btn30.TabIndex = 38;
             this.btn30.Text = "30";
             this.btn30.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -886,12 +939,12 @@
             this.btn31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn31.HighEmphasis = true;
             this.btn31.Icon = null;
-            this.btn31.Location = new System.Drawing.Point(562, 291);
+            this.btn31.Location = new System.Drawing.Point(50, 592);
             this.btn31.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn31.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn31.Name = "btn31";
             this.btn31.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn31.Size = new System.Drawing.Size(35, 30);
+            this.btn31.Size = new System.Drawing.Size(30, 25);
             this.btn31.TabIndex = 39;
             this.btn31.Text = "31";
             this.btn31.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -908,12 +961,12 @@
             this.btn32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn32.HighEmphasis = true;
             this.btn32.Icon = null;
-            this.btn32.Location = new System.Drawing.Point(605, 291);
+            this.btn32.Location = new System.Drawing.Point(137, 592);
             this.btn32.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn32.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn32.Name = "btn32";
             this.btn32.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn32.Size = new System.Drawing.Size(35, 30);
+            this.btn32.Size = new System.Drawing.Size(30, 25);
             this.btn32.TabIndex = 40;
             this.btn32.Text = "32";
             this.btn32.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -930,12 +983,12 @@
             this.btn33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn33.HighEmphasis = true;
             this.btn33.Icon = null;
-            this.btn33.Location = new System.Drawing.Point(648, 291);
+            this.btn33.Location = new System.Drawing.Point(50, 618);
             this.btn33.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn33.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn33.Name = "btn33";
             this.btn33.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn33.Size = new System.Drawing.Size(35, 30);
+            this.btn33.Size = new System.Drawing.Size(30, 25);
             this.btn33.TabIndex = 41;
             this.btn33.Text = "33";
             this.btn33.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -952,12 +1005,12 @@
             this.btn34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn34.HighEmphasis = true;
             this.btn34.Icon = null;
-            this.btn34.Location = new System.Drawing.Point(691, 291);
+            this.btn34.Location = new System.Drawing.Point(137, 618);
             this.btn34.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn34.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn34.Name = "btn34";
             this.btn34.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn34.Size = new System.Drawing.Size(35, 30);
+            this.btn34.Size = new System.Drawing.Size(30, 25);
             this.btn34.TabIndex = 42;
             this.btn34.Text = "34";
             this.btn34.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -974,12 +1027,12 @@
             this.btn35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn35.HighEmphasis = true;
             this.btn35.Icon = null;
-            this.btn35.Location = new System.Drawing.Point(734, 291);
+            this.btn35.Location = new System.Drawing.Point(50, 644);
             this.btn35.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn35.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn35.Name = "btn35";
             this.btn35.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn35.Size = new System.Drawing.Size(35, 30);
+            this.btn35.Size = new System.Drawing.Size(30, 25);
             this.btn35.TabIndex = 43;
             this.btn35.Text = "35";
             this.btn35.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -996,12 +1049,12 @@
             this.btn36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn36.HighEmphasis = true;
             this.btn36.Icon = null;
-            this.btn36.Location = new System.Drawing.Point(777, 291);
+            this.btn36.Location = new System.Drawing.Point(137, 644);
             this.btn36.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn36.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn36.Name = "btn36";
             this.btn36.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn36.Size = new System.Drawing.Size(35, 30);
+            this.btn36.Size = new System.Drawing.Size(30, 25);
             this.btn36.TabIndex = 44;
             this.btn36.Text = "36";
             this.btn36.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -1013,30 +1066,26 @@
             // 
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.materialCard1.Controls.Add(this.lblSessionResults);
             this.materialCard1.Controls.Add(this.materialDivider1);
-            this.materialCard1.Controls.Add(this.materialLabel2);
+            this.materialCard1.Controls.Add(this.lblLastResults);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(831, 110);
+            this.materialCard1.Location = new System.Drawing.Point(825, 110);
             this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(194, 302);
+            this.materialCard1.Size = new System.Drawing.Size(200, 215);
             this.materialCard1.TabIndex = 45;
             // 
-            // materialLabel2
+            // lblSessionResults
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.HighEmphasis = true;
-            this.materialLabel2.Location = new System.Drawing.Point(12, 6);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(170, 19);
-            this.materialLabel2.TabIndex = 6;
-            this.materialLabel2.Text = "Last 10 Session Results";
+            this.lblSessionResults.AutoSize = true;
+            this.lblSessionResults.Location = new System.Drawing.Point(9, 44);
+            this.lblSessionResults.Name = "lblSessionResults";
+            this.lblSessionResults.Size = new System.Drawing.Size(0, 15);
+            this.lblSessionResults.TabIndex = 47;
             // 
             // materialDivider1
             // 
@@ -1045,15 +1094,717 @@
             this.materialDivider1.Location = new System.Drawing.Point(2, 28);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
-            this.materialDivider1.Size = new System.Drawing.Size(188, 10);
+            this.materialDivider1.Size = new System.Drawing.Size(196, 10);
             this.materialDivider1.TabIndex = 7;
             this.materialDivider1.Text = "materialDivider1";
+            // 
+            // lblLastResults
+            // 
+            this.lblLastResults.AutoSize = true;
+            this.lblLastResults.Depth = 0;
+            this.lblLastResults.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblLastResults.HighEmphasis = true;
+            this.lblLastResults.Location = new System.Drawing.Point(12, 6);
+            this.lblLastResults.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblLastResults.Name = "lblLastResults";
+            this.lblLastResults.Size = new System.Drawing.Size(170, 19);
+            this.lblLastResults.TabIndex = 6;
+            this.lblLastResults.Text = "Last 10 Session Results";
+            // 
+            // lblResultDefault
+            // 
+            this.lblResultDefault.AutoSize = true;
+            this.lblResultDefault.Depth = 0;
+            this.lblResultDefault.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblResultDefault.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblResultDefault.Location = new System.Drawing.Point(332, 412);
+            this.lblResultDefault.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblResultDefault.Name = "lblResultDefault";
+            this.lblResultDefault.Size = new System.Drawing.Size(74, 29);
+            this.lblResultDefault.TabIndex = 47;
+            this.lblResultDefault.Text = "Result:";
+            // 
+            // lblLowNumbers
+            // 
+            this.lblLowNumbers.AutoSize = true;
+            this.lblLowNumbers.Depth = 0;
+            this.lblLowNumbers.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblLowNumbers.HighEmphasis = true;
+            this.lblLowNumbers.Location = new System.Drawing.Point(59, 93);
+            this.lblLowNumbers.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblLowNumbers.Name = "lblLowNumbers";
+            this.lblLowNumbers.Size = new System.Drawing.Size(113, 19);
+            this.lblLowNumbers.TabIndex = 48;
+            this.lblLowNumbers.Text = "LOW NUMBERS";
+            // 
+            // lblOdd
+            // 
+            this.lblOdd.AutoSize = true;
+            this.lblOdd.Depth = 0;
+            this.lblOdd.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblOdd.HighEmphasis = true;
+            this.lblOdd.Location = new System.Drawing.Point(52, 118);
+            this.lblOdd.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblOdd.Name = "lblOdd";
+            this.lblOdd.Size = new System.Drawing.Size(34, 19);
+            this.lblOdd.TabIndex = 49;
+            this.lblOdd.Text = "ODD";
+            // 
+            // lvlEven
+            // 
+            this.lvlEven.AutoSize = true;
+            this.lvlEven.Depth = 0;
+            this.lvlEven.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lvlEven.HighEmphasis = true;
+            this.lvlEven.Location = new System.Drawing.Point(137, 118);
+            this.lvlEven.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lvlEven.Name = "lvlEven";
+            this.lvlEven.Size = new System.Drawing.Size(40, 19);
+            this.lvlEven.TabIndex = 50;
+            this.lvlEven.Text = "EVEN";
+            // 
+            // lblEven2
+            // 
+            this.lblEven2.AutoSize = true;
+            this.lblEven2.Depth = 0;
+            this.lblEven2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblEven2.HighEmphasis = true;
+            this.lblEven2.Location = new System.Drawing.Point(135, 408);
+            this.lblEven2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblEven2.Name = "lblEven2";
+            this.lblEven2.Size = new System.Drawing.Size(40, 19);
+            this.lblEven2.TabIndex = 53;
+            this.lblEven2.Text = "EVEN";
+            // 
+            // lblOdd2
+            // 
+            this.lblOdd2.AutoSize = true;
+            this.lblOdd2.Depth = 0;
+            this.lblOdd2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblOdd2.HighEmphasis = true;
+            this.lblOdd2.Location = new System.Drawing.Point(50, 408);
+            this.lblOdd2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblOdd2.Name = "lblOdd2";
+            this.lblOdd2.Size = new System.Drawing.Size(34, 19);
+            this.lblOdd2.TabIndex = 52;
+            this.lblOdd2.Text = "ODD";
+            // 
+            // lblHighNumbers
+            // 
+            this.lblHighNumbers.AutoSize = true;
+            this.lblHighNumbers.Depth = 0;
+            this.lblHighNumbers.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblHighNumbers.HighEmphasis = true;
+            this.lblHighNumbers.Location = new System.Drawing.Point(54, 383);
+            this.lblHighNumbers.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblHighNumbers.Name = "lblHighNumbers";
+            this.lblHighNumbers.Size = new System.Drawing.Size(116, 19);
+            this.lblHighNumbers.TabIndex = 51;
+            this.lblHighNumbers.Text = "HIGH NUMBERS";
+            // 
+            // lblRed
+            // 
+            this.lblRed.AutoSize = true;
+            this.lblRed.Depth = 0;
+            this.lblRed.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed.Location = new System.Drawing.Point(17, 148);
+            this.lblRed.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed.Name = "lblRed";
+            this.lblRed.Size = new System.Drawing.Size(27, 17);
+            this.lblRed.TabIndex = 54;
+            this.lblRed.Text = "RED";
+            // 
+            // lblRed2
+            // 
+            this.lblRed2.AutoSize = true;
+            this.lblRed2.Depth = 0;
+            this.lblRed2.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed2.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed2.Location = new System.Drawing.Point(17, 174);
+            this.lblRed2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed2.Name = "lblRed2";
+            this.lblRed2.Size = new System.Drawing.Size(27, 17);
+            this.lblRed2.TabIndex = 55;
+            this.lblRed2.Text = "RED";
+            // 
+            // lblRed3
+            // 
+            this.lblRed3.AutoSize = true;
+            this.lblRed3.Depth = 0;
+            this.lblRed3.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed3.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed3.Location = new System.Drawing.Point(17, 200);
+            this.lblRed3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed3.Name = "lblRed3";
+            this.lblRed3.Size = new System.Drawing.Size(27, 17);
+            this.lblRed3.TabIndex = 56;
+            this.lblRed3.Text = "RED";
+            // 
+            // lblRed4
+            // 
+            this.lblRed4.AutoSize = true;
+            this.lblRed4.Depth = 0;
+            this.lblRed4.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed4.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed4.Location = new System.Drawing.Point(17, 226);
+            this.lblRed4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed4.Name = "lblRed4";
+            this.lblRed4.Size = new System.Drawing.Size(27, 17);
+            this.lblRed4.TabIndex = 57;
+            this.lblRed4.Text = "RED";
+            // 
+            // lblRed5
+            // 
+            this.lblRed5.AutoSize = true;
+            this.lblRed5.Depth = 0;
+            this.lblRed5.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed5.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed5.Location = new System.Drawing.Point(17, 252);
+            this.lblRed5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed5.Name = "lblRed5";
+            this.lblRed5.Size = new System.Drawing.Size(27, 17);
+            this.lblRed5.TabIndex = 58;
+            this.lblRed5.Text = "RED";
+            // 
+            // lblRed6
+            // 
+            this.lblRed6.AutoSize = true;
+            this.lblRed6.Depth = 0;
+            this.lblRed6.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed6.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed6.Location = new System.Drawing.Point(174, 278);
+            this.lblRed6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed6.Name = "lblRed6";
+            this.lblRed6.Size = new System.Drawing.Size(27, 17);
+            this.lblRed6.TabIndex = 59;
+            this.lblRed6.Text = "RED";
+            // 
+            // lblRed7
+            // 
+            this.lblRed7.AutoSize = true;
+            this.lblRed7.Depth = 0;
+            this.lblRed7.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed7.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed7.Location = new System.Drawing.Point(174, 304);
+            this.lblRed7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed7.Name = "lblRed7";
+            this.lblRed7.Size = new System.Drawing.Size(27, 17);
+            this.lblRed7.TabIndex = 60;
+            this.lblRed7.Text = "RED";
+            // 
+            // lblRed8
+            // 
+            this.lblRed8.AutoSize = true;
+            this.lblRed8.Depth = 0;
+            this.lblRed8.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed8.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed8.Location = new System.Drawing.Point(174, 330);
+            this.lblRed8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed8.Name = "lblRed8";
+            this.lblRed8.Size = new System.Drawing.Size(27, 17);
+            this.lblRed8.TabIndex = 61;
+            this.lblRed8.Text = "RED";
+            // 
+            // lblRed9
+            // 
+            this.lblRed9.AutoSize = true;
+            this.lblRed9.Depth = 0;
+            this.lblRed9.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed9.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed9.Location = new System.Drawing.Point(174, 356);
+            this.lblRed9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed9.Name = "lblRed9";
+            this.lblRed9.Size = new System.Drawing.Size(27, 17);
+            this.lblRed9.TabIndex = 62;
+            this.lblRed9.Text = "RED";
+            // 
+            // lblRed10
+            // 
+            this.lblRed10.AutoSize = true;
+            this.lblRed10.Depth = 0;
+            this.lblRed10.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed10.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed10.Location = new System.Drawing.Point(17, 437);
+            this.lblRed10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed10.Name = "lblRed10";
+            this.lblRed10.Size = new System.Drawing.Size(27, 17);
+            this.lblRed10.TabIndex = 63;
+            this.lblRed10.Text = "RED";
+            // 
+            // lblRed11
+            // 
+            this.lblRed11.AutoSize = true;
+            this.lblRed11.Depth = 0;
+            this.lblRed11.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed11.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed11.Location = new System.Drawing.Point(17, 464);
+            this.lblRed11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed11.Name = "lblRed11";
+            this.lblRed11.Size = new System.Drawing.Size(27, 17);
+            this.lblRed11.TabIndex = 64;
+            this.lblRed11.Text = "RED";
+            // 
+            // lblRed12
+            // 
+            this.lblRed12.AutoSize = true;
+            this.lblRed12.Depth = 0;
+            this.lblRed12.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed12.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed12.Location = new System.Drawing.Point(16, 491);
+            this.lblRed12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed12.Name = "lblRed12";
+            this.lblRed12.Size = new System.Drawing.Size(27, 17);
+            this.lblRed12.TabIndex = 65;
+            this.lblRed12.Text = "RED";
+            // 
+            // lblRed13
+            // 
+            this.lblRed13.AutoSize = true;
+            this.lblRed13.Depth = 0;
+            this.lblRed13.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed13.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed13.Location = new System.Drawing.Point(17, 518);
+            this.lblRed13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed13.Name = "lblRed13";
+            this.lblRed13.Size = new System.Drawing.Size(27, 17);
+            this.lblRed13.TabIndex = 66;
+            this.lblRed13.Text = "RED";
+            // 
+            // lblRed14
+            // 
+            this.lblRed14.AutoSize = true;
+            this.lblRed14.Depth = 0;
+            this.lblRed14.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed14.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed14.Location = new System.Drawing.Point(17, 544);
+            this.lblRed14.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed14.Name = "lblRed14";
+            this.lblRed14.Size = new System.Drawing.Size(27, 17);
+            this.lblRed14.TabIndex = 67;
+            this.lblRed14.Text = "RED";
+            // 
+            // lblRed15
+            // 
+            this.lblRed15.AutoSize = true;
+            this.lblRed15.Depth = 0;
+            this.lblRed15.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed15.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed15.Location = new System.Drawing.Point(174, 570);
+            this.lblRed15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed15.Name = "lblRed15";
+            this.lblRed15.Size = new System.Drawing.Size(27, 17);
+            this.lblRed15.TabIndex = 68;
+            this.lblRed15.Text = "RED";
+            // 
+            // lblRed16
+            // 
+            this.lblRed16.AutoSize = true;
+            this.lblRed16.Depth = 0;
+            this.lblRed16.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed16.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed16.Location = new System.Drawing.Point(174, 596);
+            this.lblRed16.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed16.Name = "lblRed16";
+            this.lblRed16.Size = new System.Drawing.Size(27, 17);
+            this.lblRed16.TabIndex = 69;
+            this.lblRed16.Text = "RED";
+            // 
+            // lblRed17
+            // 
+            this.lblRed17.AutoSize = true;
+            this.lblRed17.Depth = 0;
+            this.lblRed17.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed17.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed17.Location = new System.Drawing.Point(174, 622);
+            this.lblRed17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed17.Name = "lblRed17";
+            this.lblRed17.Size = new System.Drawing.Size(27, 17);
+            this.lblRed17.TabIndex = 70;
+            this.lblRed17.Text = "RED";
+            // 
+            // lblRed18
+            // 
+            this.lblRed18.AutoSize = true;
+            this.lblRed18.Depth = 0;
+            this.lblRed18.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRed18.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblRed18.Location = new System.Drawing.Point(174, 648);
+            this.lblRed18.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRed18.Name = "lblRed18";
+            this.lblRed18.Size = new System.Drawing.Size(27, 17);
+            this.lblRed18.TabIndex = 71;
+            this.lblRed18.Text = "RED";
+            // 
+            // lblBlack
+            // 
+            this.lblBlack.AutoSize = true;
+            this.lblBlack.Depth = 0;
+            this.lblBlack.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack.Location = new System.Drawing.Point(174, 148);
+            this.lblBlack.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack.Name = "lblBlack";
+            this.lblBlack.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack.TabIndex = 72;
+            this.lblBlack.Text = "BLACK";
+            // 
+            // lblBlack2
+            // 
+            this.lblBlack2.AutoSize = true;
+            this.lblBlack2.Depth = 0;
+            this.lblBlack2.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack2.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack2.Location = new System.Drawing.Point(174, 174);
+            this.lblBlack2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack2.Name = "lblBlack2";
+            this.lblBlack2.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack2.TabIndex = 73;
+            this.lblBlack2.Text = "BLACK";
+            // 
+            // lblBlack3
+            // 
+            this.lblBlack3.AutoSize = true;
+            this.lblBlack3.Depth = 0;
+            this.lblBlack3.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack3.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack3.Location = new System.Drawing.Point(174, 200);
+            this.lblBlack3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack3.Name = "lblBlack3";
+            this.lblBlack3.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack3.TabIndex = 74;
+            this.lblBlack3.Text = "BLACK";
+            // 
+            // lblBlack4
+            // 
+            this.lblBlack4.AutoSize = true;
+            this.lblBlack4.Depth = 0;
+            this.lblBlack4.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack4.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack4.Location = new System.Drawing.Point(174, 226);
+            this.lblBlack4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack4.Name = "lblBlack4";
+            this.lblBlack4.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack4.TabIndex = 75;
+            this.lblBlack4.Text = "BLACK";
+            // 
+            // lblBlack5
+            // 
+            this.lblBlack5.AutoSize = true;
+            this.lblBlack5.Depth = 0;
+            this.lblBlack5.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack5.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack5.Location = new System.Drawing.Point(174, 252);
+            this.lblBlack5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack5.Name = "lblBlack5";
+            this.lblBlack5.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack5.TabIndex = 76;
+            this.lblBlack5.Text = "BLACK";
+            // 
+            // lblBlack6
+            // 
+            this.lblBlack6.AutoSize = true;
+            this.lblBlack6.Depth = 0;
+            this.lblBlack6.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack6.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack6.Location = new System.Drawing.Point(4, 278);
+            this.lblBlack6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack6.Name = "lblBlack6";
+            this.lblBlack6.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack6.TabIndex = 77;
+            this.lblBlack6.Text = "BLACK";
+            // 
+            // lblBlack7
+            // 
+            this.lblBlack7.AutoSize = true;
+            this.lblBlack7.Depth = 0;
+            this.lblBlack7.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack7.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack7.Location = new System.Drawing.Point(4, 304);
+            this.lblBlack7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack7.Name = "lblBlack7";
+            this.lblBlack7.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack7.TabIndex = 78;
+            this.lblBlack7.Text = "BLACK";
+            // 
+            // lblBlack8
+            // 
+            this.lblBlack8.AutoSize = true;
+            this.lblBlack8.Depth = 0;
+            this.lblBlack8.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack8.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack8.Location = new System.Drawing.Point(4, 330);
+            this.lblBlack8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack8.Name = "lblBlack8";
+            this.lblBlack8.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack8.TabIndex = 79;
+            this.lblBlack8.Text = "BLACK";
+            // 
+            // lblBlack9
+            // 
+            this.lblBlack9.AutoSize = true;
+            this.lblBlack9.Depth = 0;
+            this.lblBlack9.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack9.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack9.Location = new System.Drawing.Point(4, 356);
+            this.lblBlack9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack9.Name = "lblBlack9";
+            this.lblBlack9.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack9.TabIndex = 80;
+            this.lblBlack9.Text = "BLACK";
+            // 
+            // lblBlack10
+            // 
+            this.lblBlack10.AutoSize = true;
+            this.lblBlack10.Depth = 0;
+            this.lblBlack10.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack10.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack10.Location = new System.Drawing.Point(174, 437);
+            this.lblBlack10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack10.Name = "lblBlack10";
+            this.lblBlack10.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack10.TabIndex = 81;
+            this.lblBlack10.Text = "BLACK";
+            // 
+            // lblBlack11
+            // 
+            this.lblBlack11.AutoSize = true;
+            this.lblBlack11.Depth = 0;
+            this.lblBlack11.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack11.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack11.Location = new System.Drawing.Point(174, 464);
+            this.lblBlack11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack11.Name = "lblBlack11";
+            this.lblBlack11.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack11.TabIndex = 82;
+            this.lblBlack11.Text = "BLACK";
+            // 
+            // lblBlack12
+            // 
+            this.lblBlack12.AutoSize = true;
+            this.lblBlack12.Depth = 0;
+            this.lblBlack12.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack12.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack12.Location = new System.Drawing.Point(174, 491);
+            this.lblBlack12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack12.Name = "lblBlack12";
+            this.lblBlack12.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack12.TabIndex = 83;
+            this.lblBlack12.Text = "BLACK";
+            // 
+            // lblBlack13
+            // 
+            this.lblBlack13.AutoSize = true;
+            this.lblBlack13.Depth = 0;
+            this.lblBlack13.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack13.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack13.Location = new System.Drawing.Point(174, 518);
+            this.lblBlack13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack13.Name = "lblBlack13";
+            this.lblBlack13.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack13.TabIndex = 84;
+            this.lblBlack13.Text = "BLACK";
+            // 
+            // lblBlack14
+            // 
+            this.lblBlack14.AutoSize = true;
+            this.lblBlack14.Depth = 0;
+            this.lblBlack14.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack14.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack14.Location = new System.Drawing.Point(174, 544);
+            this.lblBlack14.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack14.Name = "lblBlack14";
+            this.lblBlack14.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack14.TabIndex = 85;
+            this.lblBlack14.Text = "BLACK";
+            // 
+            // lblBlack15
+            // 
+            this.lblBlack15.AutoSize = true;
+            this.lblBlack15.Depth = 0;
+            this.lblBlack15.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack15.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack15.Location = new System.Drawing.Point(4, 570);
+            this.lblBlack15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack15.Name = "lblBlack15";
+            this.lblBlack15.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack15.TabIndex = 86;
+            this.lblBlack15.Text = "BLACK";
+            // 
+            // lblBlack16
+            // 
+            this.lblBlack16.AutoSize = true;
+            this.lblBlack16.Depth = 0;
+            this.lblBlack16.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack16.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack16.Location = new System.Drawing.Point(4, 596);
+            this.lblBlack16.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack16.Name = "lblBlack16";
+            this.lblBlack16.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack16.TabIndex = 87;
+            this.lblBlack16.Text = "BLACK";
+            // 
+            // lblBlack17
+            // 
+            this.lblBlack17.AutoSize = true;
+            this.lblBlack17.Depth = 0;
+            this.lblBlack17.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack17.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack17.Location = new System.Drawing.Point(4, 622);
+            this.lblBlack17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack17.Name = "lblBlack17";
+            this.lblBlack17.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack17.TabIndex = 88;
+            this.lblBlack17.Text = "BLACK";
+            // 
+            // lblBlack18
+            // 
+            this.lblBlack18.AutoSize = true;
+            this.lblBlack18.Depth = 0;
+            this.lblBlack18.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblBlack18.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblBlack18.Location = new System.Drawing.Point(4, 648);
+            this.lblBlack18.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblBlack18.Name = "lblBlack18";
+            this.lblBlack18.Size = new System.Drawing.Size(45, 17);
+            this.lblBlack18.TabIndex = 89;
+            this.lblBlack18.Text = "BLACK";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel1.Location = new System.Drawing.Point(332, 349);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(301, 24);
+            this.materialLabel1.TabIndex = 90;
+            this.materialLabel1.Text = "Click Clear button to clean Result:";
+            // 
+            // btnClear
+            // 
+            this.btnClear.AutoSize = false;
+            this.btnClear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnClear.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnClear.Depth = 0;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.HighEmphasis = true;
+            this.btnClear.Icon = null;
+            this.btnClear.Location = new System.Drawing.Point(635, 347);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnClear.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnClear.Name = "btnClear";
+            this.btnClear.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnClear.Size = new System.Drawing.Size(52, 28);
+            this.btnClear.TabIndex = 91;
+            this.btnClear.Text = "Clear";
+            this.btnClear.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnClear.UseAccentColor = false;
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // materialCard2
+            // 
+            this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.materialCard2.Controls.Add(this.lblInfo);
+            this.materialCard2.Controls.Add(this.materialDivider2);
+            this.materialCard2.Controls.Add(this.lblCounterInfo);
+            this.materialCard2.Depth = 0;
+            this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard2.Location = new System.Drawing.Point(824, 330);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard2.Name = "materialCard2";
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard2.Size = new System.Drawing.Size(200, 82);
+            this.materialCard2.TabIndex = 48;
+            // 
+            // lblCounterInfo
+            // 
+            this.lblCounterInfo.AutoSize = true;
+            this.lblCounterInfo.Depth = 0;
+            this.lblCounterInfo.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblCounterInfo.HighEmphasis = true;
+            this.lblCounterInfo.Location = new System.Drawing.Point(58, 6);
+            this.lblCounterInfo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblCounterInfo.Name = "lblCounterInfo";
+            this.lblCounterInfo.Size = new System.Drawing.Size(83, 19);
+            this.lblCounterInfo.TabIndex = 6;
+            this.lblCounterInfo.Text = "Trigger Info";
+            // 
+            // materialDivider2
+            // 
+            this.materialDivider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialDivider2.Depth = 0;
+            this.materialDivider2.Location = new System.Drawing.Point(2, 28);
+            this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider2.Name = "materialDivider2";
+            this.materialDivider2.Size = new System.Drawing.Size(196, 10);
+            this.materialDivider2.TabIndex = 7;
+            this.materialDivider2.Text = "materialDivider2";
+            // 
+            // lblInfo
+            // 
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Location = new System.Drawing.Point(9, 44);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(0, 15);
+            this.lblInfo.TabIndex = 47;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 693);
+            this.ClientSize = new System.Drawing.Size(1034, 672);
+            this.Controls.Add(this.materialCard2);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.lblBlack18);
+            this.Controls.Add(this.lblBlack17);
+            this.Controls.Add(this.lblBlack16);
+            this.Controls.Add(this.lblBlack15);
+            this.Controls.Add(this.lblBlack14);
+            this.Controls.Add(this.lblBlack13);
+            this.Controls.Add(this.lblBlack12);
+            this.Controls.Add(this.lblBlack11);
+            this.Controls.Add(this.lblBlack10);
+            this.Controls.Add(this.lblBlack9);
+            this.Controls.Add(this.lblBlack8);
+            this.Controls.Add(this.lblBlack7);
+            this.Controls.Add(this.lblBlack6);
+            this.Controls.Add(this.lblBlack5);
+            this.Controls.Add(this.lblBlack4);
+            this.Controls.Add(this.lblBlack3);
+            this.Controls.Add(this.lblBlack2);
+            this.Controls.Add(this.lblBlack);
+            this.Controls.Add(this.lblRed18);
+            this.Controls.Add(this.lblRed17);
+            this.Controls.Add(this.lblRed16);
+            this.Controls.Add(this.lblRed15);
+            this.Controls.Add(this.lblRed14);
+            this.Controls.Add(this.lblRed13);
+            this.Controls.Add(this.lblRed12);
+            this.Controls.Add(this.lblRed11);
+            this.Controls.Add(this.lblRed10);
+            this.Controls.Add(this.lblRed9);
+            this.Controls.Add(this.lblRed8);
+            this.Controls.Add(this.lblRed7);
+            this.Controls.Add(this.lblRed6);
+            this.Controls.Add(this.lblRed5);
+            this.Controls.Add(this.lblRed4);
+            this.Controls.Add(this.lblRed3);
+            this.Controls.Add(this.lblRed2);
+            this.Controls.Add(this.lblRed);
+            this.Controls.Add(this.lblEven2);
+            this.Controls.Add(this.lblOdd2);
+            this.Controls.Add(this.lblHighNumbers);
+            this.Controls.Add(this.lvlEven);
+            this.Controls.Add(this.lblOdd);
+            this.Controls.Add(this.lblLowNumbers);
+            this.Controls.Add(this.lblResultDefault);
             this.Controls.Add(this.materialCard1);
             this.Controls.Add(this.btn36);
             this.Controls.Add(this.btn35);
@@ -1094,7 +1845,7 @@
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.txtResult);
-            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.lblSessionNumber);
             this.Controls.Add(this.lblNumbers);
             this.Controls.Add(this.themeSwitcher);
             this.Controls.Add(this.lblThemeSwitch);
@@ -1110,6 +1861,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
+            this.materialCard2.ResumeLayout(false);
+            this.materialCard2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1122,7 +1875,7 @@
         private MaterialSkin.Controls.MaterialLabel lblThemeSwitch;
         private MaterialSkin.Controls.MaterialSwitch themeSwitcher;
         private MaterialSkin.Controls.MaterialLabel lblNumbers;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel lblSessionNumber;
         private MaterialSkin.Controls.MaterialTextBox txtResult;
         private MaterialSkin.Controls.MaterialLabel lblResult;
         private MaterialSkin.Controls.MaterialButton btn0;
@@ -1164,6 +1917,56 @@
         private MaterialSkin.Controls.MaterialButton btn36;
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialLabel lblLastResults;
+        private Label lblSessionResults;
+        private MaterialSkin.Controls.MaterialLabel lblResultDefault;
+        private MaterialSkin.Controls.MaterialLabel lblLowNumbers;
+        private MaterialSkin.Controls.MaterialLabel lblOdd;
+        private MaterialSkin.Controls.MaterialLabel lvlEven;
+        private MaterialSkin.Controls.MaterialLabel lblEven2;
+        private MaterialSkin.Controls.MaterialLabel lblOdd2;
+        private MaterialSkin.Controls.MaterialLabel lblHighNumbers;
+        private MaterialSkin.Controls.MaterialLabel lblRed;
+        private MaterialSkin.Controls.MaterialLabel lblRed2;
+        private MaterialSkin.Controls.MaterialLabel lblRed3;
+        private MaterialSkin.Controls.MaterialLabel lblRed4;
+        private MaterialSkin.Controls.MaterialLabel lblRed5;
+        private MaterialSkin.Controls.MaterialLabel lblRed6;
+        private MaterialSkin.Controls.MaterialLabel lblRed7;
+        private MaterialSkin.Controls.MaterialLabel lblRed8;
+        private MaterialSkin.Controls.MaterialLabel lblRed9;
+        private MaterialSkin.Controls.MaterialLabel lblRed10;
+        private MaterialSkin.Controls.MaterialLabel lblRed11;
+        private MaterialSkin.Controls.MaterialLabel lblRed12;
+        private MaterialSkin.Controls.MaterialLabel lblRed13;
+        private MaterialSkin.Controls.MaterialLabel lblRed14;
+        private MaterialSkin.Controls.MaterialLabel lblRed15;
+        private MaterialSkin.Controls.MaterialLabel lblRed16;
+        private MaterialSkin.Controls.MaterialLabel lblRed17;
+        private MaterialSkin.Controls.MaterialLabel lblRed18;
+        private MaterialSkin.Controls.MaterialLabel lblBlack;
+        private MaterialSkin.Controls.MaterialLabel lblBlack2;
+        private MaterialSkin.Controls.MaterialLabel lblBlack3;
+        private MaterialSkin.Controls.MaterialLabel lblBlack4;
+        private MaterialSkin.Controls.MaterialLabel lblBlack5;
+        private MaterialSkin.Controls.MaterialLabel lblBlack6;
+        private MaterialSkin.Controls.MaterialLabel lblBlack7;
+        private MaterialSkin.Controls.MaterialLabel lblBlack8;
+        private MaterialSkin.Controls.MaterialLabel lblBlack9;
+        private MaterialSkin.Controls.MaterialLabel lblBlack10;
+        private MaterialSkin.Controls.MaterialLabel lblBlack11;
+        private MaterialSkin.Controls.MaterialLabel lblBlack12;
+        private MaterialSkin.Controls.MaterialLabel lblBlack13;
+        private MaterialSkin.Controls.MaterialLabel lblBlack14;
+        private MaterialSkin.Controls.MaterialLabel lblBlack15;
+        private MaterialSkin.Controls.MaterialLabel lblBlack16;
+        private MaterialSkin.Controls.MaterialLabel lblBlack17;
+        private MaterialSkin.Controls.MaterialLabel lblBlack18;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialButton btnClear;
+        private MaterialSkin.Controls.MaterialCard materialCard2;
+        private Label lblInfo;
+        private MaterialSkin.Controls.MaterialDivider materialDivider2;
+        private MaterialSkin.Controls.MaterialLabel lblCounterInfo;
     }
 }
