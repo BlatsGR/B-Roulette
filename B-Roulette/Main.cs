@@ -14,7 +14,7 @@ namespace B_Roulette
 {
     public partial class Main : MaterialForm
     {
-        int i = 0, low = 0, high = 0, red = 0, black = 0, odd = 0, even = 0, trigger = 0 ;
+        int i = 0, low = 0, high = 0, red = 0, black = 0, odd = 0, even = 0;
         List<string> rouletteResults = new List<string>();
         public Main()
         {
@@ -714,42 +714,42 @@ namespace B_Roulette
         #region Counter & Trigger
         private void counter()
         {
-                if (low == 4)
-                {
-                    lblInfo.Text = "LOW";
-                    low = 0;
-                    lblTrigger.Text = "Trigger is active: LOW";
-                }
-                else if (high == 4)
-                {
-                    lblInfo.Text = "HIGH";
-                    high = 0;
-                    lblTrigger.Text = "Trigger is active: HIGH";
-                }
-                if (red == 4)
-                {
-                    lblInfo2.Text = "RED";
-                    red = 0;
-                    lblTrigger.Text = "Trigger is active: RED";
-                }
-                else if (black == 4)
-                {
-                    lblInfo2.Text = "BLACK";
-                    black = 0;
-                    lblTrigger.Text = "Trigger is active: BLACK";
-                }
-                if (odd == 4)
-                {
-                    lblInfo3.Text = "ODD";
-                    odd = 0;
-                    lblTrigger.Text = "Trigger is active: ODD";
-                }
-                else if (even == 4)
-                {
-                    lblInfo3.Text = "EVEN";
-                    even = 0;
-                    lblTrigger.Text = "Trigger is active: EVEN";
-                }
+            if (low == 3)
+            {
+                lblInfo.Text = "LOW";
+                low = 0;
+                lblTrigger.Text = "Trigger is active: LOW";
+            }
+            else if (high == 3)
+            {
+                lblInfo.Text = "HIGH";
+                high = 0;
+                lblTrigger.Text = "Trigger is active: HIGH";
+            }
+            if (red == 3)
+            {
+                lblInfo2.Text = "RED";
+                red = 0;
+                lblTrigger.Text = "Trigger is active: RED";
+            }
+            else if (black == 3)
+            {
+                lblInfo2.Text = "BLACK";
+                black = 0;
+                lblTrigger.Text = "Trigger is active: BLACK";
+            }
+            if (odd == 3)
+            {
+                lblInfo3.Text = "ODD";
+                odd = 0;
+                lblTrigger.Text = "Trigger is active: ODD";
+            }
+            else if (even == 3)
+            {
+                lblInfo3.Text = "EVEN";
+                even = 0;
+                lblTrigger.Text = "Trigger is active: EVEN";
+            }
         }
         #endregion
     }
