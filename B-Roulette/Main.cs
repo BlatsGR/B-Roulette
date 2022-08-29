@@ -25,6 +25,7 @@ namespace B_Roulette
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue800, Primary.LightBlue900, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
             this.FormBorderStyle = FormBorderStyle.None;
         }
+
         #region GUI Settings
         MaterialSkinManager ThemeManager = MaterialSkinManager.Instance; //constructor for theme dark and light
         private void materialSwitch1_CheckedChanged(object sender, EventArgs e)
@@ -672,6 +673,9 @@ namespace B_Roulette
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            rouletteResults.Clear();
+            lblSessionResults.Text = "";
+            lblResult.Text = "";
             low = 0;
             high = 0;
             red = 0;
@@ -688,6 +692,7 @@ namespace B_Roulette
         #region Session Results
         private void lblResult_TextChanged(object sender, EventArgs e)
         {
+            trigger++;
             counter();
             sessionResults();
             foreach (object item in rouletteResults)
@@ -699,7 +704,7 @@ namespace B_Roulette
         private void sessionResults()
         {
             int rouletteSize = rouletteResults.Count;
-            if(rouletteSize == 10)
+            if(rouletteSize == 25)
             {
                 rouletteResults.Clear();
             }
@@ -714,37 +719,37 @@ namespace B_Roulette
         #region Counter & Trigger
         private void counter()
         {
-            if (low == 3)
+            if (low == 4)
             {
                 lblInfo.Text = "LOW";
                 low = 0;
                 lblTrigger.Text = "Trigger is active: LOW";
             }
-            else if (high == 3)
+            if (high == 4)
             {
                 lblInfo.Text = "HIGH";
                 high = 0;
                 lblTrigger.Text = "Trigger is active: HIGH";
             }
-            if (red == 3)
+            if (red == 4)
             {
                 lblInfo2.Text = "RED";
                 red = 0;
                 lblTrigger.Text = "Trigger is active: RED";
             }
-            else if (black == 3)
+            if (black == 4)
             {
                 lblInfo2.Text = "BLACK";
                 black = 0;
                 lblTrigger.Text = "Trigger is active: BLACK";
             }
-            if (odd == 3)
+            if (odd == 4)
             {
                 lblInfo3.Text = "ODD";
                 odd = 0;
                 lblTrigger.Text = "Trigger is active: ODD";
             }
-            else if (even == 3)
+            if (even == 4)
             {
                 lblInfo3.Text = "EVEN";
                 even = 0;
