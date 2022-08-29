@@ -14,7 +14,7 @@ namespace B_Roulette
 {
     public partial class Main : MaterialForm
     {
-        int i = 0, low = 0, high = 0, red = 0, black = 0, odd = 0, even = 0;
+        int i = 0, low = 0, high = 0, red = 0, black = 0, odd = 0, even = 0, trigger = 0;
         List<string> rouletteResults = new List<string>();
         public Main()
         {
