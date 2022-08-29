@@ -124,9 +124,13 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.btnClear = new MaterialSkin.Controls.MaterialButton();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
-            this.lblCounterInfo = new MaterialSkin.Controls.MaterialLabel();
-            this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
+            this.lblInfo3 = new System.Windows.Forms.Label();
+            this.lblInfo2 = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
+            this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
+            this.lblCounterInfo = new MaterialSkin.Controls.MaterialLabel();
+            this.btnReset = new MaterialSkin.Controls.MaterialButton();
+            this.lblTrigger = new MaterialSkin.Controls.MaterialLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.materialCard1.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -1709,6 +1713,8 @@
             // 
             this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.materialCard2.Controls.Add(this.lblInfo3);
+            this.materialCard2.Controls.Add(this.lblInfo2);
             this.materialCard2.Controls.Add(this.lblInfo);
             this.materialCard2.Controls.Add(this.materialDivider2);
             this.materialCard2.Controls.Add(this.lblCounterInfo);
@@ -1719,8 +1725,46 @@
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
             this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard2.Size = new System.Drawing.Size(200, 82);
+            this.materialCard2.Size = new System.Drawing.Size(200, 72);
             this.materialCard2.TabIndex = 48;
+            // 
+            // lblInfo3
+            // 
+            this.lblInfo3.AutoSize = true;
+            this.lblInfo3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblInfo3.Location = new System.Drawing.Point(141, 46);
+            this.lblInfo3.Name = "lblInfo3";
+            this.lblInfo3.Size = new System.Drawing.Size(0, 21);
+            this.lblInfo3.TabIndex = 49;
+            // 
+            // lblInfo2
+            // 
+            this.lblInfo2.AutoSize = true;
+            this.lblInfo2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblInfo2.Location = new System.Drawing.Point(89, 46);
+            this.lblInfo2.Name = "lblInfo2";
+            this.lblInfo2.Size = new System.Drawing.Size(0, 21);
+            this.lblInfo2.TabIndex = 48;
+            // 
+            // lblInfo
+            // 
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblInfo.Location = new System.Drawing.Point(39, 46);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(0, 21);
+            this.lblInfo.TabIndex = 47;
+            // 
+            // materialDivider2
+            // 
+            this.materialDivider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialDivider2.Depth = 0;
+            this.materialDivider2.Location = new System.Drawing.Point(2, 28);
+            this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider2.Name = "materialDivider2";
+            this.materialDivider2.Size = new System.Drawing.Size(196, 10);
+            this.materialDivider2.TabIndex = 7;
+            this.materialDivider2.Text = "materialDivider2";
             // 
             // lblCounterInfo
             // 
@@ -1735,30 +1779,48 @@
             this.lblCounterInfo.TabIndex = 6;
             this.lblCounterInfo.Text = "Trigger Info";
             // 
-            // materialDivider2
+            // btnReset
             // 
-            this.materialDivider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialDivider2.Depth = 0;
-            this.materialDivider2.Location = new System.Drawing.Point(2, 28);
-            this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialDivider2.Name = "materialDivider2";
-            this.materialDivider2.Size = new System.Drawing.Size(196, 10);
-            this.materialDivider2.TabIndex = 7;
-            this.materialDivider2.Text = "materialDivider2";
+            this.btnReset.AutoSize = false;
+            this.btnReset.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnReset.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnReset.Depth = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.HighEmphasis = true;
+            this.btnReset.Icon = null;
+            this.btnReset.Location = new System.Drawing.Point(901, 404);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnReset.Size = new System.Drawing.Size(52, 28);
+            this.btnReset.TabIndex = 92;
+            this.btnReset.Text = "Reset";
+            this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnReset.UseAccentColor = false;
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // lblInfo
+            // lblTrigger
             // 
-            this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(9, 44);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(0, 15);
-            this.lblInfo.TabIndex = 47;
+            this.lblTrigger.AutoSize = true;
+            this.lblTrigger.Depth = 0;
+            this.lblTrigger.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblTrigger.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblTrigger.HighEmphasis = true;
+            this.lblTrigger.Location = new System.Drawing.Point(355, 540);
+            this.lblTrigger.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblTrigger.Name = "lblTrigger";
+            this.lblTrigger.Size = new System.Drawing.Size(1, 0);
+            this.lblTrigger.TabIndex = 93;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1034, 672);
+            this.Controls.Add(this.lblTrigger);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.materialCard2);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.materialLabel1);
@@ -1968,5 +2030,9 @@
         private Label lblInfo;
         private MaterialSkin.Controls.MaterialDivider materialDivider2;
         private MaterialSkin.Controls.MaterialLabel lblCounterInfo;
+        private Label lblInfo3;
+        private Label lblInfo2;
+        private MaterialSkin.Controls.MaterialButton btnReset;
+        private MaterialSkin.Controls.MaterialLabel lblTrigger;
     }
 }
