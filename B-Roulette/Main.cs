@@ -745,6 +745,7 @@ namespace B_Roulette
             btnReset.Enabled = true;
             lblClickOK.Visible = false;
             btnOK.Visible = false;
+            txtResult.Enabled = true;
             trigger = 0;
         }
         #endregion
@@ -795,6 +796,7 @@ namespace B_Roulette
                 btnReset.Enabled = false;
                 lblClickOK.Visible = true;
                 btnOK.Visible = true;
+                txtResult.Enabled = false;
                 trigger = 0;
             }
             counter();
