@@ -14,7 +14,7 @@ namespace B_Roulette
 {
     public partial class Main : MaterialForm
     {
-        int i = 0, low = 0, high = 0, red = 0, black = 0, odd = 0, even = 0, trigger = 0;
+        int i = 0, low = 0, high = 0, red = 0, black = 0, odd = 0, even = 0, trigger = 0, trigger1 = 0;
         List<string> rouletteResults = new List<string>();
         public Main()
         {
@@ -672,6 +672,13 @@ namespace B_Roulette
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            lblTrigger.Text = trigger.ToString();
+            trigger1++;
+            if(trigger1 == 3)
+            {
+                trigger = 2;
+                trigger1 = 0;
+            }
             lblResult.Text = "";
             trigger--;
         }
@@ -687,6 +694,7 @@ namespace B_Roulette
             black = 0;
             odd = 0;
             even = 0;
+            trigger = 0;
             lblTrigger.Text = "";
             lblInfo.Text = "";
             lblInfo2.Text = "";
@@ -733,10 +741,11 @@ namespace B_Roulette
             btn34.Enabled = true;
             btn35.Enabled = true;
             btn36.Enabled = true;
-            btnClear.Enabled = true;
+            btnClear.Enabled = false;
             btnReset.Enabled = true;
             lblClickOK.Visible = false;
             btnOK.Visible = false;
+            trigger = 0;
         }
         #endregion
 
