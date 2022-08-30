@@ -26,6 +26,11 @@ namespace B_Roulette
             this.FormBorderStyle = FormBorderStyle.None;
         }
 
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
         #region GUI Settings
         MaterialSkinManager ThemeManager = MaterialSkinManager.Instance; //constructor for theme dark and light
         private void materialSwitch1_CheckedChanged(object sender, EventArgs e)
@@ -668,8 +673,8 @@ namespace B_Roulette
         private void btnClear_Click(object sender, EventArgs e)
         {
             lblResult.Text = "";
+            trigger--;
         }
-
 
         private void btnReset_Click(object sender, EventArgs e)
         {
@@ -687,12 +692,102 @@ namespace B_Roulette
             lblInfo2.Text = "";
             lblInfo3.Text = "";
         }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            lblResult.Text = roulette[0, 0].ToString() + " =  " + roulette[0, 1].ToString() + "  " + roulette[0, 2].ToString() + "  " + roulette[0, 3].ToString();
+            btn0.Enabled = true;
+            btn1.Enabled = true;
+            btn2.Enabled = true;
+            btn3.Enabled = true;
+            btn4.Enabled = true;
+            btn5.Enabled = true;
+            btn6.Enabled = true;
+            btn7.Enabled = true;
+            btn8.Enabled = true;
+            btn9.Enabled = true;
+            btn10.Enabled = true;
+            btn11.Enabled = true;
+            btn12.Enabled = true;
+            btn13.Enabled = true;
+            btn14.Enabled = true;
+            btn15.Enabled = true;
+            btn16.Enabled = true;
+            btn17.Enabled = true;
+            btn18.Enabled = true;
+            btn19.Enabled = true;
+            btn20.Enabled = true;
+            btn21.Enabled = true;
+            btn22.Enabled = true;
+            btn23.Enabled = true;
+            btn24.Enabled = true;
+            btn25.Enabled = true;
+            btn26.Enabled = true;
+            btn27.Enabled = true;
+            btn28.Enabled = true;
+            btn29.Enabled = true;
+            btn30.Enabled = true;
+            btn31.Enabled = true;
+            btn32.Enabled = true;
+            btn33.Enabled = true;
+            btn34.Enabled = true;
+            btn35.Enabled = true;
+            btn36.Enabled = true;
+            btnClear.Enabled = true;
+            btnReset.Enabled = true;
+            lblClickOK.Visible = false;
+            btnOK.Visible = false;
+        }
         #endregion
 
         #region Session Results
         private void lblResult_TextChanged(object sender, EventArgs e)
         {
             trigger++;
+            if(trigger == 4)
+            {   btn0.Enabled = false;
+                btn1.Enabled = false;
+                btn2.Enabled = false;
+                btn3.Enabled = false;
+                btn4.Enabled = false;
+                btn5.Enabled = false;
+                btn6.Enabled = false;
+                btn7.Enabled = false;
+                btn8.Enabled = false;
+                btn9.Enabled = false;
+                btn10.Enabled = false;
+                btn11.Enabled = false;
+                btn12.Enabled = false;
+                btn13.Enabled = false;
+                btn14.Enabled = false;
+                btn15.Enabled = false;
+                btn16.Enabled = false;
+                btn17.Enabled = false;
+                btn18.Enabled = false;
+                btn19.Enabled = false;
+                btn20.Enabled = false;
+                btn21.Enabled = false;
+                btn22.Enabled = false;
+                btn23.Enabled = false;
+                btn24.Enabled = false;
+                btn25.Enabled = false;
+                btn26.Enabled = false;
+                btn27.Enabled = false;
+                btn28.Enabled = false;
+                btn29.Enabled = false;
+                btn30.Enabled = false;
+                btn31.Enabled = false;
+                btn32.Enabled = false;
+                btn33.Enabled = false;
+                btn34.Enabled = false;
+                btn35.Enabled = false;
+                btn36.Enabled = false;
+                btnClear.Enabled = false;
+                btnReset.Enabled = false;
+                lblClickOK.Visible = true;
+                btnOK.Visible = true;
+                trigger = 0;
+            }
             counter();
             sessionResults();
             foreach (object item in rouletteResults)

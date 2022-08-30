@@ -131,6 +131,8 @@
             this.lblCounterInfo = new MaterialSkin.Controls.MaterialLabel();
             this.btnReset = new MaterialSkin.Controls.MaterialButton();
             this.lblTrigger = new MaterialSkin.Controls.MaterialLabel();
+            this.lblClickOK = new MaterialSkin.Controls.MaterialLabel();
+            this.btnOK = new MaterialSkin.Controls.MaterialButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.materialCard1.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -1814,11 +1816,50 @@
             this.lblTrigger.Size = new System.Drawing.Size(1, 0);
             this.lblTrigger.TabIndex = 93;
             // 
+            // lblClickOK
+            // 
+            this.lblClickOK.AutoSize = true;
+            this.lblClickOK.Depth = 0;
+            this.lblClickOK.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblClickOK.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.lblClickOK.Location = new System.Drawing.Point(345, 570);
+            this.lblClickOK.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblClickOK.Name = "lblClickOK";
+            this.lblClickOK.Size = new System.Drawing.Size(249, 24);
+            this.lblClickOK.TabIndex = 94;
+            this.lblClickOK.Text = "Click OK button to continue:";
+            this.lblClickOK.Visible = false;
+            // 
+            // btnOK
+            // 
+            this.btnOK.AutoSize = false;
+            this.btnOK.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnOK.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnOK.Depth = 0;
+            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOK.HighEmphasis = true;
+            this.btnOK.Icon = null;
+            this.btnOK.Location = new System.Drawing.Point(598, 569);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnOK.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnOK.Name = "btnOK";
+            this.btnOK.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnOK.Size = new System.Drawing.Size(36, 28);
+            this.btnOK.TabIndex = 95;
+            this.btnOK.Text = "ok";
+            this.btnOK.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnOK.UseAccentColor = false;
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Visible = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1035, 680);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.lblClickOK);
             this.Controls.Add(this.lblSessionNumber);
             this.Controls.Add(this.lblTrigger);
             this.Controls.Add(this.txtResult);
@@ -1920,6 +1961,7 @@
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "B-Roulette Statistics";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
@@ -1939,8 +1981,6 @@
         private MaterialSkin.Controls.MaterialLabel lblNumbers;
         private MaterialSkin.Controls.MaterialLabel lblSessionNumber;
         private MaterialSkin.Controls.MaterialTextBox txtResult;
-        private MaterialSkin.Controls.MaterialLabel lblResult;
-        private MaterialSkin.Controls.MaterialButton btn0;
         private MaterialSkin.Controls.MaterialButton btn1;
         private MaterialSkin.Controls.MaterialButton btn2;
         private MaterialSkin.Controls.MaterialButton btn3;
@@ -2034,5 +2074,9 @@
         private Label lblInfo2;
         private MaterialSkin.Controls.MaterialButton btnReset;
         private MaterialSkin.Controls.MaterialLabel lblTrigger;
+        private MaterialSkin.Controls.MaterialLabel lblResult;
+        private MaterialSkin.Controls.MaterialButton btn0;
+        private MaterialSkin.Controls.MaterialLabel lblClickOK;
+        private MaterialSkin.Controls.MaterialButton btnOK;
     }
 }
