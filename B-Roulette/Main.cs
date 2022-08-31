@@ -115,12 +115,6 @@ namespace B_Roulette
             {
                 txtResult.Text = string.Empty;
                 lblResult.Text = roulette[0, 0].ToString() + " =  " + roulette[0, 1].ToString() + "  " + roulette[0, 2].ToString() + "  " + roulette[0, 3].ToString();
-                low++;
-                high++;
-                red++;
-                black++;
-                odd++;
-                even++;
             }
             else if (txtResult.Text == "1")
             {
@@ -386,12 +380,6 @@ namespace B_Roulette
         private void btn0_Click(object sender, EventArgs e)
         {
             lblResult.Text = roulette[0, 0].ToString() + " =  " + roulette[0, 1].ToString() + "  " + roulette[0, 2].ToString() + "  " + roulette[0, 3].ToString();
-            low++;
-            high++;
-            red++;
-            black++;
-            odd++;
-            even++;
         }
 
         private void btn1_Click(object sender, EventArgs e)
