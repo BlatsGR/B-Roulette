@@ -115,6 +115,22 @@ namespace B_Roulette
             {
                 txtResult.Text = string.Empty;
                 lblResult.Text = roulette[0, 0].ToString() + " =  " + roulette[0, 1].ToString() + "  " + roulette[0, 2].ToString() + "  " + roulette[0, 3].ToString();
+                if (trigger == 1)
+                {
+                    trigger = 0;
+                }
+                else if(trigger == 2)
+                {
+                    trigger = 1;
+                }
+                else if (trigger == 3)
+                {
+                    trigger = 2;
+                }
+                else if (trigger == 4)
+                {
+                    trigger = 3;
+                }
             }
             else if (txtResult.Text == "1")
             {
@@ -380,6 +396,28 @@ namespace B_Roulette
         private void btn0_Click(object sender, EventArgs e)
         {
             lblResult.Text = roulette[0, 0].ToString() + " =  " + roulette[0, 1].ToString() + "  " + roulette[0, 2].ToString() + "  " + roulette[0, 3].ToString();
+            trigger1++;
+            if(trigger1 == 2)
+            {
+                trigger--;
+                trigger1 = 0;
+            }
+            if (trigger == 1)
+            {
+                trigger = 0;
+            }
+            else if (trigger == 2)
+            {
+                trigger = 1;
+            }
+            else if (trigger == 3)
+            {
+                trigger = 2;
+            }
+            else if (trigger == 4)
+            {
+                trigger = 3;
+            }
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -703,7 +741,7 @@ namespace B_Roulette
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            lblResult.Text = roulette[0, 0].ToString() + " =  " + roulette[0, 1].ToString() + "  " + roulette[0, 2].ToString() + "  " + roulette[0, 3].ToString();
+            lblResult.Text = "---------------------------------------";
             btn0.Enabled = true;
             btn1.Enabled = true;
             btn2.Enabled = true;
