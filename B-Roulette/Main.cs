@@ -14,6 +14,7 @@ namespace B_Roulette
 {
     public partial class Main : MaterialForm
     {
+        private bool btn0Clicked = false;
         int i = 0, low = 0, high = 0, red = 0, black = 0, odd = 0, even = 0, trigger = 0, trigger1 = 0;
         List<string> rouletteResults = new List<string>();
         public Main()
@@ -113,24 +114,8 @@ namespace B_Roulette
             int result;
             if (txtResult.Text == "0")
             {
-                txtResult.Text = string.Empty;
+                btn0Clicked = true;
                 lblResult.Text = roulette[0, 0].ToString() + " =  " + roulette[0, 1].ToString() + "  " + roulette[0, 2].ToString() + "  " + roulette[0, 3].ToString();
-                if (trigger == 1)
-                {
-                    trigger = 0;
-                }
-                else if(trigger == 2)
-                {
-                    trigger = 1;
-                }
-                else if (trigger == 3)
-                {
-                    trigger = 2;
-                }
-                else if (trigger == 4)
-                {
-                    trigger = 3;
-                }
             }
             else if (txtResult.Text == "1")
             {
@@ -395,29 +380,9 @@ namespace B_Roulette
         #region Button Results
         private void btn0_Click(object sender, EventArgs e)
         {
+            btn0Clicked = true;
             lblResult.Text = roulette[0, 0].ToString() + " =  " + roulette[0, 1].ToString() + "  " + roulette[0, 2].ToString() + "  " + roulette[0, 3].ToString();
-            trigger1++;
-            if(trigger1 == 2)
-            {
-                trigger--;
-                trigger1 = 0;
-            }
-            if (trigger == 1)
-            {
-                trigger = 0;
-            }
-            else if (trigger == 2)
-            {
-                trigger = 1;
-            }
-            else if (trigger == 3)
-            {
-                trigger = 2;
-            }
-            else if (trigger == 4)
-            {
-                trigger = 3;
-            }
+            txtResult.Focus();
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -426,6 +391,7 @@ namespace B_Roulette
             high++;
             black++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -434,6 +400,7 @@ namespace B_Roulette
             high++;
             red++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn3_Click(object sender, EventArgs e)
@@ -442,6 +409,7 @@ namespace B_Roulette
             high++;
             black++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn4_Click(object sender, EventArgs e)
@@ -450,6 +418,7 @@ namespace B_Roulette
             high++;
             red++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn5_Click(object sender, EventArgs e)
@@ -458,6 +427,7 @@ namespace B_Roulette
             high++;
             black++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn6_Click(object sender, EventArgs e)
@@ -466,6 +436,7 @@ namespace B_Roulette
             high++;
             red++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn7_Click(object sender, EventArgs e)
@@ -474,6 +445,7 @@ namespace B_Roulette
             high++;
             black++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn8_Click(object sender, EventArgs e)
@@ -482,6 +454,7 @@ namespace B_Roulette
             high++;
             red++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn9_Click(object sender, EventArgs e)
@@ -490,6 +463,7 @@ namespace B_Roulette
             high++;
             black++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn10_Click(object sender, EventArgs e)
@@ -498,6 +472,7 @@ namespace B_Roulette
             high++;
             red++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn11_Click(object sender, EventArgs e)
@@ -506,6 +481,7 @@ namespace B_Roulette
             high++;
             red++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn12_Click(object sender, EventArgs e)
@@ -514,6 +490,7 @@ namespace B_Roulette
             high++;
             black++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn13_Click(object sender, EventArgs e)
@@ -522,6 +499,7 @@ namespace B_Roulette
             high++;
             red++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn14_Click(object sender, EventArgs e)
@@ -530,6 +508,7 @@ namespace B_Roulette
             high++;
             black++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn15_Click(object sender, EventArgs e)
@@ -538,6 +517,7 @@ namespace B_Roulette
             high++;
             red++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn16_Click(object sender, EventArgs e)
@@ -546,6 +526,7 @@ namespace B_Roulette
             high++;
             black++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn17_Click(object sender, EventArgs e)
@@ -554,6 +535,7 @@ namespace B_Roulette
             high++;
             red++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn18_Click(object sender, EventArgs e)
@@ -562,6 +544,7 @@ namespace B_Roulette
             high++;
             black++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn19_Click(object sender, EventArgs e)
@@ -570,6 +553,7 @@ namespace B_Roulette
             low++;
             black++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn20_Click(object sender, EventArgs e)
@@ -578,6 +562,7 @@ namespace B_Roulette
             low++;
             red++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn21_Click(object sender, EventArgs e)
@@ -586,6 +571,7 @@ namespace B_Roulette
             low++;
             black++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn22_Click(object sender, EventArgs e)
@@ -594,6 +580,7 @@ namespace B_Roulette
             low++;
             red++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn23_Click(object sender, EventArgs e)
@@ -602,6 +589,7 @@ namespace B_Roulette
             low++;
             black++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn24_Click(object sender, EventArgs e)
@@ -610,6 +598,7 @@ namespace B_Roulette
             low++;
             red++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn25_Click(object sender, EventArgs e)
@@ -618,6 +607,7 @@ namespace B_Roulette
             low++;
             black++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn26_Click(object sender, EventArgs e)
@@ -626,6 +616,7 @@ namespace B_Roulette
             low++;
             red++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn27_Click(object sender, EventArgs e)
@@ -634,6 +625,7 @@ namespace B_Roulette
             low++;
             black++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn28_Click(object sender, EventArgs e)
@@ -642,6 +634,7 @@ namespace B_Roulette
             low++;
             red++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn29_Click(object sender, EventArgs e)
@@ -650,6 +643,7 @@ namespace B_Roulette
             low++;
             red++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn30_Click(object sender, EventArgs e)
@@ -658,6 +652,7 @@ namespace B_Roulette
             low++;
             black++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn31_Click(object sender, EventArgs e)
@@ -666,6 +661,7 @@ namespace B_Roulette
             low++;
             red++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn32_Click(object sender, EventArgs e)
@@ -674,6 +670,7 @@ namespace B_Roulette
             low++;
             black++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn33_Click(object sender, EventArgs e)
@@ -682,6 +679,7 @@ namespace B_Roulette
             low++;
             red++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn34_Click(object sender, EventArgs e)
@@ -690,6 +688,7 @@ namespace B_Roulette
             low++;
             black++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btn35_Click(object sender, EventArgs e)
@@ -698,6 +697,7 @@ namespace B_Roulette
             low++;
             red++;
             even++;
+            txtResult.Focus();
         }
 
         private void btn36_Click(object sender, EventArgs e)
@@ -706,19 +706,14 @@ namespace B_Roulette
             low++;
             black++;
             odd++;
+            txtResult.Focus();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            lblTrigger.Text = trigger.ToString();
-            trigger1++;
-            if(trigger1 == 3)
-            {
-                trigger = 2;
-                trigger1 = 0;
-            }
+            btn0Clicked = true;
             lblResult.Text = "";
-            trigger--;
+            txtResult.Focus();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -737,6 +732,7 @@ namespace B_Roulette
             lblInfo.Text = "";
             lblInfo2.Text = "";
             lblInfo3.Text = "";
+            txtResult.Focus();
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -779,7 +775,7 @@ namespace B_Roulette
             btn34.Enabled = true;
             btn35.Enabled = true;
             btn36.Enabled = true;
-            btnClear.Enabled = false;
+            btnClear.Enabled = true;
             btnReset.Enabled = true;
             lblClickOK.Visible = false;
             btnOK.Visible = false;
@@ -793,8 +789,14 @@ namespace B_Roulette
         private void lblResult_TextChanged(object sender, EventArgs e)
         {
             trigger++;
+            if (btn0Clicked == true)
+            {
+                trigger--;
+                btn0Clicked = false;
+            }
             if(trigger == 4)
-            {   btn0.Enabled = false;
+            {
+                btn0.Enabled = false;
                 btn1.Enabled = false;
                 btn2.Enabled = false;
                 btn3.Enabled = false;
